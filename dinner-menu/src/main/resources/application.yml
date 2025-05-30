@@ -1,0 +1,17 @@
+spring:
+  # config:
+  #   import: optional:dotenv:.env
+
+  application:
+    name: dinner-menu
+  ai:
+    openai:
+      api-key: 개인 api 키
+      base-url: https://api.groq.com/openai
+      chat:
+        options:
+          model: llama3-70b-8192
+          temperature: 0.7
+
+server:
+  port: 8080
